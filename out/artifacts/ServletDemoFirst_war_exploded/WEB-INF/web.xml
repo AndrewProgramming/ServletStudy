@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0">
+
+
+  <servlet>
+    <servlet-name>HttpServlet</servlet-name>
+    <servlet-class>FirstServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CurrentTimeServlet</servlet-name>
+    <servlet-class>CurrentTimeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetParameterServlet</servlet-name>
+    <servlet-class>GetParametersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SimpleRegistrationServlet</servlet-name>
+    <servlet-class>SimpleRegistrationServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>hiddenValueRegis</servlet-name>
+    <servlet-class>HiddenValueRegistration</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RegistrationWithCookie</servlet-name>
+    <servlet-class>RegistrationWithCookie</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RegistrationWithHttpSession</servlet-name>
+    <servlet-class>RegistrationWithHttpSession</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>HttpServlet</servlet-name>
+    <url-pattern>/sc</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CurrentTimeServlet</servlet-name>
+    <url-pattern>/time</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetParameterServlet</servlet-name>
+    <url-pattern>/param</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SimpleRegistrationServlet</servlet-name>
+    <url-pattern>/db</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>hiddenValueRegis</servlet-name>
+    <url-pattern>/hiddenRegis</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RegistrationWithCookie</servlet-name>
+    <url-pattern>/cookieRegis</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RegistrationWithHttpSession</servlet-name>
+    <url-pattern>/httpsessionRegis</url-pattern>
+  </servlet-mapping>
+
+</web-app>
